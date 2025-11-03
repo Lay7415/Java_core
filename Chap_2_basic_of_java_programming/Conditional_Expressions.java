@@ -14,5 +14,10 @@ public class Conditional_Expressions {
             System.out.println("Трава сильна против Воды");
         else
             System.out.println("Неизвестный тип покемона");
+
+        int x = 5;
+        int y = 4;
+
+        System.out.println(x > y ? "yes" : "no");
     }
 }

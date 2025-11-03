@@ -6,5 +6,9 @@ public class Primitive_Type_Conversion {
         double a = 56.9898;
         int b = (int) Math.round(a);
         System.out.println(b); 
+
+        float float_var = 55.55f;
+
+        System.out.println((int)float_var);
     }
 }
