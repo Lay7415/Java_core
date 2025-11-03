@@ -23,11 +23,28 @@ public class Switch_Statement {
         //         break;
         // }
 
-        switch (car_model) {
-            case "Mers" -> System.out.println("Deutschland");
-            case "Audi" -> System.out.println("Brasilia");
-            case "Bugati" -> System.out.println("England");
-            default -> System.out.println("none");
-        }
+        // switch (car_model) {
+        //     case "Mers" -> System.out.println("Deutschland");
+        //     case "Audi" -> System.out.println("Brasilia");
+        //     case "Bugati" -> System.out.println("England");
+        //     default -> System.out.println("none");
+        // }
+
+        String result = switch (car_model) {
+            case "Mers":
+                yield "Deuthchland";
+            case "BMW":
+                yield "Deutchland";
+            case "Audi":
+                yield "Deuthchland";
+            case "Bugati":
+                yield "England";
+            case "Licang":
+                yield "China";
+            default:
+                yield "none";
+        };
+
+        System.out.println(result);
     }
 }
